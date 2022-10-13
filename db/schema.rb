@@ -28,5 +28,5 @@ ActiveRecord::Schema.define(version: 2022_10_13_161433) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-
+  add_foreign_key "recipes", "users"
 end
